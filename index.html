@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Ramsii ❤️</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+font-family:Georgia,serif;
+background:linear-gradient(135deg,#fff0f5,#fff8ed,#fde8f0);
+color:#482735;
+overflow-x:hidden;
+}
+
+section{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:30px 16px;
+position:relative;
+}
+
+.card{
+width:min(900px,100%);
+background:rgba(255,255,255,.91);
+backdrop-filter:blur(12px);
+border-radius:30px;
+padding:35px 24px;
+text-align:center;
+box-shadow:0 20px 70px rgba(80,20,50,.16);
+animation:cardIn 1s ease;
+}
+
+@keyframes cardIn{
+from{opacity:0;transform:translateY(25px) scale(.98)}
+to{opacity:1;transform:translateY(0) scale(1)}
+}
+
+h1{
+font-size:clamp(48px,11vw,88px);
+color:#d6336c;
+margin:12px 0;
+}
+
+h2{
+font-size:clamp(30px,7vw,48px);
+color:#b52d59;
+margin-bottom:20px;
+}
+
+h3{
+color:#c52f60;
+margin:10px 0;
+}
+
+p{
+font-family:Arial,sans-serif;
+font-size:17px;
+line-height:1.8;
+margin:12px 0;
+}
+
+.small{
+font-family:Arial,sans-serif;
+font-size:13px;
+opacity:.65;
+}
+
+.big{
+font-size:24px;
+color:#9e2850;
+}
+
+.heart-big{
+font-size:65px;
+animation:beat 1.2s infinite;
+}
+
+@keyframes beat{
+50%{transform:scale(1.18)}
+}
+
+button{
+border:0;
+border-radius:50px;
+padding:14px 22px;
+margin:7px;
+background:#ff5d86;
+color:white;
+font-size:15px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 8px 25px rgba(255,90,130,.25);
+transition:.25s;
+}
+
+button:hover{
+transform:translateY(-3px) scale(1.02);
+}
+
+.secondary{
+background:#fff0f4;
+color:#b52d59;
+border:1px solid #ffc4d3;
+}
+
+.music{
+margin:22px 0;
+padding:20px;
+border-radius:22px;
+background:#fff1f5;
+animation:pulseBox 2s infinite;
+}
+
+@keyframes pulseBox{
+0%,100%{box-shadow:0 0 0 rgba(255,95,135,0)}
+50%{box-shadow:0 0 25px rgba(255,95,135,.18)}
+}
+
+.letter{
+background:linear-gradient(135deg,#fff3f6,#fffaf0);
+border-radius:25px;
+padding:25px;
+text-align:left;
+margin:20px 0;
+}
+
+.timeline{
+max-width:720px;
+margin:auto;
+text-align:left;
+}
+
+.memory{
+border-left:4px solid #ff7397;
+background:#fff5f8;
+padding:18px;
+margin:17px 0;
+border-radius:0 20px 20px 0;
+transition:.3s;
+}
+
+.memory:hover{
+transform:translateX(5px);
+}
+
+.date{
+font-family:Arial,sans-serif;
+font-weight:bold;
+color:#c32f60;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:20px;
+}
+
+.photo{
+height:280px;
+border-radius:22px;
+overflow:hidden;
+background:#ffe8ef;
+position:relative;
+transition:.4s;
+}
+
+.photo:hover{
+transform:scale(1.025) rotate(.5deg);
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.photo span{
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+padding:30px 12px 12px;
+color:white;
+font-family:Arial,sans-serif;
+background:linear-gradient(transparent,rgba(0,0,0,.72));
+}
+
+.names{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-top:20px;
+}
+
+.namebox{
+padding:20px;
+border-radius:20px;
+background:#fff6f8;
+border:1px solid #ffd0dc;
+font-family:Arial,sans-serif;
+transition:.3s;
+}
+
+.namebox:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(160,40,80,.1);
+}
+
+.envelope{
+width:190px;
+height:125px;
+background:#ff86a5;
+border-radius:10px;
+margin:25px auto;
+position:relative;
+cursor:pointer;
+box-shadow:0 15px 35px rgba(130,30,65,.2);
+animation:floatEnvelope 2.5s ease-in-out infinite;
+}
+
+@keyframes floatEnvelope{
+50%{transform:translateY(-8px)}
+}
+
+.envelope:before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+border-left:95px solid transparent;
+border-right:95px solid transparent;
+border-top:68px solid #ffb2c6;
+}
+
+.envelope div{
+position:absolute;
+bottom:18px;
+left:0;
+right:0;
+color:white;
+font-family:Arial,sans-serif;
+font-weight:bold;
+}
+
+.hidden{
+display:none;
+}
+
+.surprise{
+margin-top:20px;
+padding:25px;
+border-radius:25px;
+background:#fff0f5;
+animation:appear .7s ease;
+}
+
+@keyframes appear{
+from{opacity:0;transform:scale(.8)}
+to{opacity:1;transform:scale(1)}
+}
+
+.promises{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.promise{
+background:white;
+border:1px solid #ffd1dc;
+border-radius:18px;
+padding:18px;
+font-family:Arial,sans-serif;
+transition:.3s;
+}
+
+.promise:hover{
+transform:translateY(-4px);
+}
+
+.signature{
+font-size:27px;
+color:#c52f60;
+margin-top:25px;
+}
+
+.final{
+font-size:29px;
+color:#a32652;
+}
+
+/* NEW GUJARATI SECTION */
+
+.gujarati-box{
+margin:25px 0;
+padding:30px 22px;
+border-radius:28px;
+background:linear-gradient(135deg,#fff0f5,#fff8ec);
+border:1px solid #ffd0dc;
+box-shadow:0 10px 35px rgba(120,30,60,.08);
+position:relative;
+overflow:hidden;
+}
+
+.gujarati-box:before{
+content:"❤️";
+position:absolute;
+font-size:80px;
+opacity:.06;
+left:-10px;
+top:-20px;
+}
+
+.gujarati-box:after{
+content:"🌷";
+position:absolute;
+font-size:70px;
+opacity:.06;
+right:-5px;
+bottom:-15px;
+}
+
+.gujarati-line{
+font-size:23px;
+line-height:1.8;
+color:#9b2850;
+font-weight:600;
+position:relative;
+z-index:1;
+}
+
+.love-button{
+background:#d94b73;
+animation:buttonGlow 1.8s infinite;
+}
+
+@keyframes buttonGlow{
+0%,100%{box-shadow:0 8px 25px rgba(217,75,115,.2)}
+50%{box-shadow:0 0 30px rgba(217,75,115,.5)}
+}
+
+.rose{
+font-size:40px;
+animation:roseFloat 2s ease-in-out infinite;
+}
+
+@keyframes roseFloat{
+50%{transform:translateY(-7px) rotate(5deg)}
+}
+
+.floating{
+position:fixed;
+bottom:-40px;
+pointer-events:none;
+z-index:0;
+animation:floatUp 8s linear infinite;
+}
+
+@keyframes floatUp{
+0%{
+transform:translateY(0) rotate(0);
+opacity:0;
+}
+15%{opacity:.8}
+100%{
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+}
+}
+
+@media(max-width:650px){
+
+.gallery,
+.names,
+.promises{
+grid-template-columns:1fr;
+}
+
+.photo{
+height:300px;
+}
+
+.card{
+padding:28px 16px;
+}
+
+.gujarati-line{
+font-size:20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- FLOATING HEARTS -->
+
+<script>
+
+for(let i=0;i<25;i++){
+
+let h=document.createElement("div");
+
+h.className="floating";
+
+h.innerHTML=
+["❤️","💕","💗","💖","🌷","✨"]
+[Math.floor(Math.random()*6)];
+
+h.style.left=Math.random()*100+"%";
+
+h.style.fontSize=
+(15+Math.random()*20)+"px";
+
+h.style.animationDelay=
+Math.random()*8+"s";
+
+document.body.appendChild(h);
+
+}
+
+</script>
+
+
+<!-- ================================= -->
+<!-- 1. OPENING -->
+<!-- ================================= -->
+
+<section id="home">
+
+<div class="card">
+
+<div class="heart-big">
+❤️
+</div>
+
+<div class="small">
+16 September • Our Special Day
+</div>
+
+<h1>
+Ramsii
+</h1>
+
+<p class="big">
+
+Before you read anything…<br>
+
+<b>
+please give me one little smile. 😊
+</b>
+
+</p>
+
+<p>
+
+This isn't just an anniversary page.
+
+It's a little piece of my heart,
+made especially for you.
+
+</p>
+
+<p>
+
+Because our story has had everything —
+beautiful memories,
+silly moments,
+fights,
+tears,
+apologies
+and love.
+
+❤️
+
+</p>
+
+
+<!-- SONG ON FIRST PAGE -->
+
+<div class="music">
+
+<p class="big">
+
+🎵 Aa gaana bas gaana nathi, Ramsii…<br>
+
+aaje mara dil ni ek nani si maafi chhe. ❤️
+
+</p>
+
+<button onclick="playSong()">
+
+▶️ Tap karo, Praneshwari… aa gaana tamara mate chhe ❤️
+
+</button>
+
+<p class="small" id="musicText">
+
+Tap the button when you're ready...
+
+</p>
+
+<audio id="song" src="our-song.mp3"></audio>
+
+</div>
+
+
+<button onclick="go('letter')">
+
+💌 Open My Letter
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 2. APOLOGY -->
+<!-- ================================= -->
+
+<section id="letter">
+
+<div class="card">
+
+<h2>
+Ramsii… ❤️
+</h2>
+
+<div class="letter">
+
+<p>
+
+Meri Ramsii,
+mujhe pata hai maine tumhe bahut baar hurt kiya hai.
+
+Kabhi meri baaton ne tumhe rulaya,
+kabhi mere gusse ne tumhara dil dukhaya.
+
+</p>
+
+<p>
+
+Aur sabse zyada regret mujhe us waqt ka hai
+jab tum dukhi thi aur akeli feel kar rahi thi.
+
+Jab mujhe tumhe manana chahiye tha,
+tumhare paas rehna chahiye tha…
+
+lekin main khud gussa karta raha.
+
+</p>
+
+<p>
+
+<b>
+I'm genuinely sorry, meri Praneshwari. 🥺❤️
+</b>
+
+</p>
+
+<p>
+
+Main apni galtiyon ko justify nahi karna chahta.
+
+Main bas itna chahta hoon
+ki tumhe pata ho —
+mujhe tumhari feelings ki value hai.
+
+</p>
+
+<p>
+
+Aur agar kal raat bhi meri wajah se tumhara dil dukha,
+agar meri kisi baat se tum royi,
+toh uske liye bhi sorry,
+meri Pran Vallabha.
+
+</p>
+
+<p>
+
+Is baar mera goal tumhe sirf manana nahi hai…
+
+</p>
+
+<p class="big">
+
+<b>
+Mera goal tumhe phir se hansana hai. 😊❤️
+</b>
+
+</p>
+
+<p>
+
+Tum meri life mein kitni important ho,
+shayad main words mein kabhi properly explain na kar paun.
+
+Lekin main chahta hoon ki tum meri care
+sirf meri baaton mein nahi,
+meri actions mein bhi feel karo.
+
+</p>
+
+</div>
+
+
+<button onclick="go('gujarati')">
+
+🌷 Ek vaat dil thi…
+
+</button>
+
+
+<button onclick="go('envelope')">
+
+💌 I Have Something For You
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 3. NEW GUJARATI ROMAN SECTION -->
+<!-- ================================= -->
+
+<section id="gujarati">
+
+<div class="card">
+
+<div class="rose">
+🌷
+</div>
+
+<h2>
+Ramsii… thodu sa sambhalje ❤️
+</h2>
+
+<div class="gujarati-box">
+
+<p class="gujarati-line">
+
+Jindagi chaar divas ni hoy chhe… ❤️
+
+</p>
+
+<p class="gujarati-line">
+
+ema thi tran divas toh aapde
+ek bija sathe ladta,
+naraj thata,
+ane ek bija thi dur thai ne pasar kari daiye chhiye…
+
+</p>
+
+<p class="gujarati-line">
+
+Toh pachhi aa nani si jindagi ma
+aapde ek bija ne dukh aapva karta,
+thodu hasiye,
+thodu pamper kariye,
+ane shanti thi ek bija sathe vaat kariye ne? 🥺❤️
+
+</p>
+
+<p class="gujarati-line">
+
+Hu nathi ichhto ke aapda vachche no
+beautiful time gussa ane ego lai jaay.
+
+</p>
+
+<p class="gujarati-line">
+
+Mane bas etlu j joie chhe ke
+jyare hu tamari sathe vaat karu,
+tyare tamne lage ke
+“haa… aa jagyae hu sukoon thi rahi saku.” 🫂
+
+</p>
+
+<p class="gujarati-line">
+
+Aapde banne perfect nathi,
+pan aapde ek bija mate
+thoda better bani shakiye chhiye.
+
+</p>
+
+<p class="gujarati-line">
+
+Etle aaje mari Ramsii ne
+ek nani si request…
+
+</p>
+
+<p class="gujarati-line">
+
+<b>
+chalo ne… have ochhu ladishu,
+ochhu naraj thaisu,
+ane thodu vadhu prem karishu. ❤️
+</b>
+
+</p>
+
+<p class="gujarati-line">
+
+Tamari smile mate
+mara taraf thi ek permanent effort. 🌷
+
+</p>
+
+</div>
+
+
+<button class="love-button"
+onclick="gujaratiSurprise()">
+
+❤️ “Haan, aaje thi sukoon”
+
+</button>
+
+
+<div id="gujaratiSurprise"
+class="surprise hidden">
+
+<p class="big">
+
+A bas ek button nathi, Ramsii… ❤️
+
+</p>
+
+<p>
+
+Aa mari taraf thi ek nani si wish chhe —
+
+</p>
+
+<p>
+
+<b>
+Aapda vachche ladai hoy toh pan
+raat sudhi dil ma bojh lai ne na suiye.
+
+</b>
+
+</p>
+
+<p>
+
+Jo ek naraj hoy,
+toh bijo thodu pyaar thi paas aave.
+
+Jo ek hurt hoy,
+toh bijo ego side ma muki ne samjhe.
+
+</p>
+
+<p class="big">
+
+<b>
+Because life is too short
+to spend it fighting with the person
+we want to make happy. ❤️
+</b>
+
+</p>
+
+</div>
+
+
+<button onclick="go('envelope')">
+
+💌 Have mara dil ni vaat…
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 4. SECRET ENVELOPE -->
+<!-- ================================= -->
+
+<section id="envelope">
+
+<div class="card">
+
+<h2>
+A Secret Little Letter 💌
+</h2>
+
+<p>
+
+Praneshwari,
+is envelope ko tap karo…
+
+andar tumhare liye ek chhoti si baat hai.
+
+</p>
+
+
+<div class="envelope"
+onclick="openEnvelope()">
+
+<div>
+TAP ME ❤️
+</div>
+
+</div>
+
+
+<div id="secret"
+class="surprise hidden">
+
+<p class="big">
+
+"Ramsii, agar meri life ek book hai,
+toh tum uske un pages mein se ho
+jinhe main baar-baar padhna chahta hoon."
+
+</p>
+
+<p>
+
+Tumhare saath guzara hua time
+mere liye sirf time nahi hai.
+
+Woh meri memories hain.
+
+</p>
+
+<p>
+
+Aur haan…
+main kabhi-kabhi stupid ho sakta hoon 😅
+
+kabhi gussa bhi kar sakta hoon,
+
+lekin tumhari importance mere liye
+kabhi kam nahi hoti.
+
+</p>
+
+<p>
+
+So aaj thoda sa gussa side mein rakh do…
+
+aur mujhe tumhari woh beautiful smile de do. 🥺🌷
+
+</p>
+
+</div>
+
+
+<button onclick="go('memories')">
+
+📸 Remember Our Story
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 5. MEMORIES -->
+<!-- ================================= -->
+
+<section id="memories">
+
+<div class="card">
+
+<h2>
+Our Little Time Machine ❤️
+</h2>
+
+<p>
+
+Kuch memories photographs mein hoti hain…
+
+aur kuch dil mein.
+
+Hamari kuch memories
+dono jagah hain.
+
+</p>
+
+
+<div class="timeline">
+
+
+<div class="memory">
+
+<div class="date">
+
+16 September 2024 ❤️
+
+</div>
+
+<p>
+
+Woh din jab hamari Instagram wali story
+hum dono ke liye ek special date ban gayi.
+
+</p>
+
+<p>
+
+Shayad us waqt humein pata nahi tha
+ki ek simple conversation
+itni saari memories ka beginning
+ban jayegi.
+
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<div class="date">
+
+December 2024 • Dwarka 🛕
+
+</div>
+
+<p>
+
+Dwarka ke woh moments…
+
+saath ghoomna,
+saath waqt bitana,
+baatein karna
+aur chhoti-chhoti cheezon ko enjoy karna.
+
+</p>
+
+<p>
+
+Aaj bhi un moments ko yaad karta hoon
+toh dil automatically smile karta hai.
+
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<div class="date">
+
+Last Year's Cake Celebration 🎂
+
+</div>
+
+<p>
+
+Ghar par saath cake cut karna…
+
+simple sa celebration,
+lekin mere liye bahut special.
+
+</p>
+
+<p>
+
+Is saal shayad waise celebrate nahi kar paayenge,
+aur iska thoda dukh hai.
+
+Lekin woh memory
+mere paas hamesha rahegi.
+
+❤️
+
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<div class="date">
+
+All The Little Things 🌷
+
+</div>
+
+<p>
+
+Random conversations,
+silly jokes,
+narazgi,
+manana,
+hasi,
+late-night talks…
+
+</p>
+
+<p>
+
+Har chhota moment
+hamari story ka ek piece hai.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<button onclick="go('gallery')">
+
+🖼️ See Our Pictures
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 6. GALLERY -->
+<!-- ================================= -->
+
+<section id="gallery">
+
+<div class="card">
+
+<h2>
+Our Memories in Pictures 📸
+</h2>
+
+<p class="small">
+
+Put your real photos in the same folder
+as index.html.
+
+</p>
+
+
+<div class="gallery">
+
+
+<div class="photo">
+
+<img src="photo1.jpg"
+alt="Our memory">
+
+<span>
+One of those smiles I love ❤️
+</span>
+
+</div>
+
+
+<div class="photo">
+
+<img src="photo2.jpg"
+alt="Our memory">
+
+<span>
+A little piece of our story 🌷
+</span>
+
+</div>
+
+
+<div class="photo">
+
+<img src="dwarka.jpg"
+alt="Dwarka memory">
+
+<span>
+December 2024 • Dwarka 🛕
+</span>
+
+</div>
+
+
+<div class="photo">
+
+<img src="cake.jpg"
+alt="Cake celebration">
+
+<span>
+Our cake celebration 🎂❤️
+</span>
+
+</div>
+
+
+</div>
+
+
+<button onclick="go('names')">
+
+🌸 Your Special Names
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 7. HER NAMES -->
+<!-- ================================= -->
+
+<section id="names">
+
+<div class="card">
+
+<h2>
+For My Ramsii 🌷
+</h2>
+
+<p>
+
+Kabhi main tumhe <b>Ramsii</b> bolta hoon…
+
+kabhi <b>Praneshwari</b>…
+
+kabhi <b>Pran Vallabha</b>…
+
+aur kabhi meri <b>Priyadarshini</b>.
+
+</p>
+
+
+<div class="names">
+
+
+<div class="namebox">
+
+🌷<br>
+
+<b>Ramsii</b>
+
+<br><br>
+
+The name that feels
+closest to my heart.
+
+</div>
+
+
+<div class="namebox">
+
+👑<br>
+
+<b>Praneshwari</b>
+
+<br><br>
+
+The one who holds
+a very special place in my heart.
+
+</div>
+
+
+<div class="namebox">
+
+❤️<br>
+
+<b>Pran Vallabha</b>
+
+<br><br>
+
+A name filled with affection.
+
+</div>
+
+
+<div class="namebox">
+
+🌸<br>
+
+<b>Priyadarshini</b>
+
+<br><br>
+
+The one whose presence
+makes my world softer.
+
+</div>
+
+
+</div>
+
+
+<p class="big">
+
+Naam alag ho sakte hain…<br>
+
+<b>
+par insaan ek hi hai — tum. ❤️
+</b>
+
+</p>
+
+
+<button onclick="go('promise')">
+
+🫶 One Promise
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 8. PROMISE -->
+<!-- ================================= -->
+
+<section id="promise">
+
+<div class="card">
+
+<h2>
+One Promise, My Praneshwari 🫂
+</h2>
+
+<p class="big">
+
+Main perfect hone ka promise nahi karunga.
+
+</p>
+
+<p>
+
+Kyunki main perfect hoon hi nahi.
+
+Kabhi galat bolunga,
+kabhi galat react karunga,
+kabhi stupid bhi behave karunga.
+
+</p>
+
+<p>
+
+Lekin main tumse ye promise
+karna chahta hoon:
+
+</p>
+
+
+<div class="promises">
+
+
+<div class="promise">
+
+🫂
+
+Tum hurt ho toh tumhe
+akela chhodne ke bajay
+tumhe samajhne ki koshish karunga.
+
+</div>
+
+
+<div class="promise">
+
+❤️
+
+Ego se pehle
+tumhari feelings ko
+importance dunga.
+
+</div>
+
+
+<div class="promise">
+
+🌷
+
+Sirf words nahi,
+actions se apni care
+dikhane ki koshish karunga.
+
+</div>
+
+
+<div class="promise">
+
+😊
+
+Tumhare aansuon se zyada
+tumhari smile ka reason
+banna chahta hoon.
+
+</div>
+
+
+</div>
+
+
+<button onclick="finalSurprise()">
+
+🎁 One Last Surprise
+
+</button>
+
+
+<div id="surprise"
+class="surprise hidden">
+
+<p class="final">
+
+Ramsii…
+
+</p>
+
+<p>
+
+Aaj shayad pichhle saal jaisa cake,
+woh same celebration,
+ya woh same situation na ho.
+
+</p>
+
+<p>
+
+Aur honestly…
+iska thoda dukh mujhe bhi hai.
+
+</p>
+
+<p>
+
+Lekin ek cheez abhi bhi mere paas hai —
+
+</p>
+
+<p class="big">
+
+<b>
+Hamari memories. ❤️
+</b>
+
+</p>
+
+<p>
+
+Aur main chahta hoon ki
+is saal ki anniversary ki
+sabse beautiful memory
+ye page ho.
+
+</p>
+
+<p>
+
+Jise tum kabhi future mein kholkar
+ek baar smile karo aur bolo:
+
+</p>
+
+<p class="big">
+
+<b>
+"He really tried to make me smile." ❤️
+</b>
+
+</p>
+
+</div>
+
+
+<button onclick="go('final')">
+
+❤️ One Final Message
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 9. FINAL -->
+<!-- ================================= -->
+
+<section id="final">
+
+<div class="card">
+
+<div class="heart-big">
+
+❤️
+
+</div>
+
+
+<h2>
+
+Happy Anniversary, Ramsii
+
+</h2>
+
+
+<p class="final">
+
+16 September 2024
+
+<br>
+
+↓
+
+<br>
+
+A memory I will always treasure
+
+</p>
+
+
+<div class="letter">
+
+
+<p>
+
+Meri Ramsii,
+
+</p>
+
+
+<p>
+
+Thank you for every laugh,
+every memory,
+every conversation,
+every little moment,
+and even every fight
+that taught me that love
+also needs understanding.
+
+</p>
+
+
+<p>
+
+Main tumhe sirf aaj ke din
+special feel nahi karana chahta.
+
+Main chahta hoon ki tum meri life mein
+apni importance normal days par bhi feel karo.
+
+</p>
+
+
+<p>
+
+Aaj no arguments.
+
+<br>
+
+No ego.
+
+<br>
+
+No pressure.
+
+</p>
+
+
+<p>
+
+Bas ek smile…
+
+ek warm hug…
+
+aur meri taraf se ek simple sa:
+
+</p>
+
+
+<p class="big">
+
+<b>
+
+Happy Anniversary,
+meri Praneshwari. ❤️
+
+</b>
+
+</p>
+
+
+<p>
+
+Aur agar maine tumhe kabhi rulaya hai,
+
+toh aaj mujhe maaf karne ki
+jaldi mat karna…
+
+bas mujhe ek chance dena
+ki main tumhe zyada baar hasa sakun.
+
+</p>
+
+
+<p>
+
+Tum Ramsii ho,
+
+tum Praneshwari ho,
+
+tum Pran Vallabha ho,
+
+tum meri Priyadarshini ho…
+
+</p>
+
+
+<p class="big">
+
+<b>
+
+Aur tum meri life ki
+bahut beautiful memory ho. ❤️
+
+</b>
+
+</p>
+
+
+</div>
+
+
+<p class="signature">
+
+With love,<br>
+
+tumhara pagal ❤️
+
+</p>
+
+
+<p class="small">
+
+For Ramsii —
+
+my Praneshwari,
+
+my Pran Vallabha,
+
+my Priyadarshini 🌷
+
+</p>
+
+
+</div>
+
+</section>
+
+
+<script>
+
+
+/* ================================= */
+/* NAVIGATION */
+/* ================================= */
+
+function go(id){
+
+document
+.getElementById(id)
+.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+
+/* ================================= */
+/* SONG */
+/* ================================= */
+
+function playSong(){
+
+let song=document.getElementById("song");
+
+let text=document.getElementById("musicText");
+
+song.play()
+.then(()=>{
+
+text.innerHTML=
+"Our song is playing… ❤️";
+
+})
+.catch(()=>{
+
+text.innerHTML=
+"Please put your song in this folder as <b>our-song.mp3</b>.";
+
+});
+
+}
+
+
+/* ================================= */
+/* ENVELOPE */
+/* ================================= */
+
+function openEnvelope(){
+
+document
+.getElementById("secret")
+.classList.remove("hidden");
+
+heartBurst();
+
+}
+
+
+/* ================================= */
+/* GUJARATI SURPRISE */
+/* ================================= */
+
+function gujaratiSurprise(){
+
+document
+.getElementById("gujaratiSurprise")
+.classList.remove("hidden");
+
+heartBurst();
+
+}
+
+
+/* ================================= */
+/* FINAL SURPRISE */
+/* ================================= */
+
+function finalSurprise(){
+
+document
+.getElementById("surprise")
+.classList.remove("hidden");
+
+heartBurst();
+
+}
+
+
+/* ================================= */
+/* HEART BURST */
+/* ================================= */
+
+function heartBurst(){
+
+for(let i=0;i<50;i++){
+
+let heart=document.createElement("div");
+
+heart.innerHTML=
+["❤️","💕","💗","💖","🌷","✨"]
+[Math.floor(Math.random()*6)];
+
+heart.style.position="fixed";
+
+heart.style.left="50%";
+
+heart.style.top="50%";
+
+heart.style.fontSize=
+(15+Math.random()*25)+"px";
+
+heart.style.zIndex="999";
+
+heart.style.pointerEvents="none";
+
+document.body.appendChild(heart);
+
+let x=
+(Math.random()-.5)
+*window.innerWidth;
+
+let y=
+(Math.random()-.5)
+*window.innerHeight;
+
+heart.animate(
+
+[
+
+{
+transform:
+"translate(-50%,-50%) scale(0)",
+opacity:1
+},
+
+{
+transform:
+`translate(${x}px,${y}px) scale(1.4)`,
+opacity:0
+}
+
+],
+
+{
+duration:1400,
+easing:"ease-out"
+}
+
+);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},1400);
+
+}
+
+}
+
+
+/* ================================= */
+/* EXTRA HEARTS WHEN PAGE OPENS */
+/* ================================= */
+
+setTimeout(()=>{
+
+heartBurst();
+
+},900);
+
+</script>
+
+</body>
+</html>
